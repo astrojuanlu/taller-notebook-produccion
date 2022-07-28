@@ -84,7 +84,7 @@ def predict(dteday, hr, weathersit, temp, atemp, hum, windspeed) -> int:
     model = joblib.load("/tmp/model.joblib")
 
     X_input = pd.DataFrame(
-        [[dteday, hr, weathersit, temp, atemp, hum, windspeed]],
+        [[pd.to_datetime(dteday), hr, weathersit, temp, atemp, hum, windspeed]],
         columns=["dteday", "hr", "weathersit", "temp", "atemp", "hum", "windspeed"],
     )
 

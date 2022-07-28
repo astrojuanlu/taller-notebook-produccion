@@ -1,6 +1,4 @@
-pandas
-sklearn
-matplotlib
-seaborn
-joblib
-numpy
+file:./library
+
+fastapi
+uvicorn

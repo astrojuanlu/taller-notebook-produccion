@@ -32,4 +32,5 @@ pip install flit
 mkdir library && cd library
 flit init
 pip install black
+uvicorn app:app --reload
 ```
