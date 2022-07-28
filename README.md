@@ -28,4 +28,8 @@ source .venv/bin/activate
 pip install -U pip pip-tools
 pip-compile
 pip install -r requirements.txt
+pip install flit
+mkdir library && cd library
+flit init
+pip install black
 ```
