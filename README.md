@@ -19,3 +19,13 @@
 - https://voila.readthedocs.io/
 - https://shiny.rstudio.com/py/
 - https://railway.app/?referralCode=VO2J82 (afiliado)
+
+## Instrucciones
+
+```
+python -m venv .venv
+source .venv/bin/activate
+pip install -U pip pip-tools
+pip-compile
+pip install -r requirements.txt
+```
